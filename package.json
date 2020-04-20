@@ -5,11 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "extract": "NODE_ENV=production next build && NODE_ENV=production next export"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "admin-lte": "^3.0.0-alpha.2",
+    "bootstrap": "^4.4.1",
     "next": "9.3.4",
+    "node-sass": "^4.13.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "16.13.1",
+    "react-icons": "^3.9.0"
   }
 }
